@@ -2,27 +2,68 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgb(39, 43, 46);
+    padding: 100px;
+    gap: 80px;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 312px;
-    background-color: rgb(22, 27, 37);
+    border: 1px solid white;
+    max-width: 612px;
 }
 
 .display {
-    height: 64px;
-    background-color: rgba(118, 130, 110, 0.891);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    height: 96px;
+    background-color: rgb(44, 70, 112);
+    border: 2px solid white;
+}
+
+.result {
+    margin: 7px;
+    font-size: 36px;
+    color: white;
+
 }
 
 .container-buttons {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+}
+
+.row-1, .row-2, .row-3, .row-4 {
+    display: flex;
+    align-content: flex-start;
+}
+
+.title {
+    font-size: 64px;
+    color: white;
+    font-weight: bolder;
 }
 
 button {
+    font-size: larger;
+    font-weight: bold;
+    border: 2px solid white;
+    color: white;
+    background-color: rgb(57, 62, 70);
+    width: 64px;
+    height: 64px;
     margin: 0;
-    border: 0;
+    padding: 0;
+}
+
+.clear {
+    background-color: rgb(175, 12, 12);
+}
+
+.equals {
+    width: 256px;
+    background-color: rgb(44, 70, 112);
 }
